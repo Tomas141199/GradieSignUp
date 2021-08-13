@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  -webkit-box-pack: center;
+}
+
+html, body, div,
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+.login {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Recursos */
+div .flex{
+  margin-top: 1rem;
+}
+
+input[type="email"], input[type="password"],input[type="button"]{
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  margin-top: 0.6rem;
+}
+
+input[type="button"] {
+color: #fff;
+width: 100%;
+background-color: #033043;
+}
+
+label {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+span{
+  margin-bottom: 2rem;
+  font-family: arial;
+  font-size: 0.8rem;
+  word-spacing: 1px;
+  line-height: 10px;
+}
+
+.background {
+  background-image: url("/img/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: auto;
+}
+
+/* Left wrap */
+
+.left-wrap {
+  background: #033043 url("/img/iPhone_Mockup.png") no-repeat bottom;
+  background-size: contain;
+  border-radius: 0.4rem 0 0 0.4rem;
+  height: 24rem;
+  text-align: center;
+}
+
+.left-wrap h2 {
+  margin: 2rem 3rem 0.7rem 3rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.left-wrap p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+/* Right wrap */
+
+.right-wrap {
+  background: white;
+  border-radius: 0 0.4rem 0.4rem 0;
+  height: 24rem;
+}
+
+.right-wrap h2 {
+  margin: 2rem 6rem 1.6rem 2.5rem;
+  color: black;
+  font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main-wrapper{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+
+  body {
+    display: block;
+    height: 100px;
+  }
+
+  input {
+    display: block;
+  }
+
+  .main-wrapper{
+    height: 100%;
+  }
+
+  .left-wrap {
+    border: none;
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .right-wrap {
+    border: none;
+    border-radius: 0;
+    height: 100%;
+  }
+
+}
